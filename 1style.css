@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #1e90ff;
+}
+
+button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #104e8b;
+}
+
+/* Karte und Container initial versteckt */
+#mapContainer {
+    display: none;
+    height: 80vh;
+    position: relative;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+/* Back-Button oben links */
+#backBtn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+/* Allgemein-Button unter dem Back-Button */
+#allgemein {
+    position: absolute;
+    top: 10px;   /* unter dem Back-Button */
+    left: 10px;  /* gleiche horizontale Position */
+    z-index: 1001;
+}
